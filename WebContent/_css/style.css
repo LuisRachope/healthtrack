@@ -1,0 +1,649 @@
+﻿@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:700');
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*body{
+	margin: 100px 0px 100px 0px;
+	background-color: rgba(81, 168, 183, 1);
+	max-width: 100%;
+	max-height: 100%;
+	background-image: url("../_images/imagem_menor.png");
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+*/
+
+body {
+    background: url("../_images/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div#main{
+	margin: auto;
+	box-shadow: 6px 6px 1px rgba(0, 0, 0, 0.5);
+	padding: 0px 50px 0px 50px;
+	max-width: 600px;
+	background-color: white;
+	/*border-radius: 10px;*/
+}
+
+header#cabecalho{
+	margin-bottom: 55px;
+	text-align: center;
+}
+
+img#logo_login{
+	position: relative;
+	top: 10px;
+	height: 180px;
+	width: 190px;
+}
+
+header#cabecalho h2{
+	color: rgba(137,23,173, 0.7);
+	font-size: 10pt;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+	top: 0px;
+}
+
+.input-group-addon{
+	background-color: rgba(137,23,173, 0.7);
+	color: white;
+	border: 1px;
+}
+
+form#tudo{
+	position: relative;
+	top: -30px;
+}
+
+div#email{
+	background-color: rgba( 137,23,173, 0.0);
+}
+
+div#enteremail{
+	border: 5px;
+}
+
+.form-control{
+	border-radius: 2rem;
+	border-color: 1px solid rgb(0,0,0,.125);
+}
+
+.form-control:focus{
+	box-shadow: 0px 0px 8px rgba(191, 222, 255);
+	border-color: rgba(128, 189, 255);
+}
+
+a{
+	text-align: right;
+}
+
+button#entrar{
+	color: white;
+	background-color: rgba(137,23,173, 0.7);
+	border-color: rgba(137,23,173, 0);
+	box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+	font-size: 12pt;
+	font-weight: bolder;
+	min-height: 50px;
+	border-radius: 0px;
+	margin-top: 10px;
+}
+
+a#cadastrar{
+	color: white;
+	background-color: rgba(137,23,173, 0.7);
+	border-color: rgba(137,23,173, 0);
+	box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+	font-size: 12pt;
+	font-weight: bolder;
+	min-height: 50px;
+	border-radius: 0px;
+	margin-top: 10px;
+	padding-top: 13px;
+}
+
+button#esqueceu{
+	font-size: 12px;
+	color: rgba(137,23,173);
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	position: relative;
+	left: 18px;
+}
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .form-label-group>input,
+  .form-label-group>label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  .form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    /* Substituição do padrão `<rótulo>` margem */
+    line-height: 1.5;
+    color: #495057;
+    cursor: text;
+    /* Corresponde a entrada sob o rótulo */
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+  }
+  
+  .form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-moz-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom: calc(var(--input-padding-y) / 3);
+  }
+  
+  .form-label-group input:not(:placeholder-shown)~label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    font-size: 12px;
+    color: #777;
+  }
+  
+  /* Adaptação para o Internet Explorer - Edge
+  -------------------------------------------------- */
+  
+  @supports (-ms-ime-align: auto) {
+    .form-label-group>label {
+      display: none;
+    }
+    .form-label-group input::-ms-input-placeholder {
+      color: #777;
+    }
+  }
+
+
+/*---------------------------- CADASTRAR -------------------------------*/
+
+div#cadastrar{
+	box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+	max-width:  470px;
+	background-color: white;
+	padding: 0px 10px 20px 10px;
+}
+
+header#cabecalho2 h1{
+	margin-bottom: -10px;
+	font-size: 25pt;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+header#cabecalho2 h2{
+	font-size: 10pt;
+}
+
+form#campos .control-label{
+	text-align: right;
+}
+
+form#campos-cadastro div{
+	margin-top: 10px;
+}
+
+/*---------------------------- DASHBOARD -------------------------------*/
+
+div#dashboard{
+	max-width: 1100px;
+	box-shadow: 6px 6px 1px rgba(0, 0, 0, 0.5);
+	background-color: rgba(137,23,173);
+	padding: 20px;
+}
+
+body#body-dashboard{
+	padding-top: 16px;
+}
+
+/*header*/
+
+header#header-dashboard{
+	box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.5);
+	background-color: white;
+	min-height: 100px;
+	margin-bottom: 16px;
+}
+
+div#logo-dashboard{
+	position: relative;
+	top: 5px;
+	left: -30px;
+}
+
+img#imagem-lista{
+	height: 50px;
+}
+
+img#imagem-perfil{
+	height: 65px;
+	position: relative;
+	left: -17px;
+}
+
+div#div-header{
+	margin: 7px 0px auto 0px;
+	position: relative;
+	left: 20px;
+}
+
+/*/header*/
+
+section#section-dados{
+	box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.5);
+	background-color: white;
+	box-sizing: border-box;
+	background-color: #eeeeee;
+}
+
+section#section-dados h1{
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+section#section-dados h5{
+	text-align: center;
+	font-weight: bold;
+}
+
+section#section-dados img{
+	width: 30px;
+	margin: 0px 10px 0px 10px;
+}
+
+div#row2{
+	display: block;
+	background-color: white;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5)
+}
+
+div#row2 h1{
+	font-size: 20pt;
+	min-height: 50px;
+	vertical-align: middle;
+	margin-bottom: 0px;
+}
+
+div#row2 h2{
+	font-size: 14pt;
+}
+
+div#dados h2{
+	font-size: 10pt;
+}
+
+img#logo-dashboard{
+	height: 90px;
+}
+
+a#leg-peso{
+	position: relative;
+	left: 15px;
+}
+
+a#leg-pressao{
+	position: relative;
+	left: -17px;
+}
+
+a#leg-ativfisicas{
+	position: relative;
+	left: -5px;
+}
+
+a#leg-alimentacao{
+	position: relative;
+	left: -6px;
+}
+
+div#table-dashboard{
+	width: 100%
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: block;
+	background-color: white;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+	padding-bottom: 15px;
+}
+
+button#addOne{
+	width: 35px;	
+}
+
+button#botaomodalmain{
+	margin: 0px;
+	padding: 0px;
+	width: 50px;
+}
+
+div#table-dashboard h1{
+	font-size: 20pt;
+	min-height: 50px;
+	vertical-align: middle;
+	margin-bottom: 0px;
+}
+
+table#dashboard img{
+	height: 35px;
+	width: 35px;
+}
+
+td#ds{
+	width: 100%;
+	padding: 0px 10px 0px 10px;
+}
+
+ 
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .form-label-group>input#input,
+  .form-label-group>label#label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+    height: auto;
+    border-radius: 2rem;
+  }
+  
+  .form-label-group>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    /* Substituição do padrão `<rótulo>` margem */
+    line-height: 1.5;
+    color: #495057;
+    cursor: text;
+    /* Corresponde a entrada sob o rótulo */
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+  }
+  
+  .form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-ms-input-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::-moz-placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input::placeholder {
+    color: transparent;
+  }
+  
+  .form-label-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom: calc(var(--input-padding-y) / 3);
+  }
+  
+  .form-label-group input:not(:placeholder-shown)~label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    font-size: 12px;
+    color: #777;
+  }
+  
+
+button#cadast{
+	color: #ffffff;
+	font-size: 1,5rem;
+	font-weight: bold;
+	letter-spacing: 0.05rem;
+    padding: 1.1rem 1rem;
+    border-color:  #8917ad;
+	background-color: #8917ad;
+	border-radius: 2rem;
+}
+
+button#altinf, button#alterasenha, button#salvarnovasenha, button#salvarperfil, button#salvarpressao, button#salvaralimentacao, button#salvaratvfis, button#universal{
+	color: #ffffff;
+	font-size: 1,5rem;
+	font-weight: bold;
+	letter-spacing: 0.05rem;
+    padding: 1.1rem 1rem;
+    border-color:  #8917ad;
+	background-color: #8917ad;
+	border-radius: 2rem;
+}
+
+a#universal{
+	color: #ffffff;
+	font-size: 1,5rem;
+	font-weight: bold;
+	letter-spacing: 0.05rem;
+    padding: 1.1rem 1rem;
+    border-color:  #8917ad;
+	background-color: #8917ad;
+	border-radius: 2rem;
+}
+
+
+
+button#botaomodal{
+	color: #ffffff;
+	font-size: 1,5rem;
+	font-weight: bold;
+	letter-spacing: 0.05rem;
+    padding: 1.1rem 1rem;
+    border-color:  #11c84d;
+	background-color: #11c84d;
+	border-radius: 2rem;
+}
+
+button#altinf:hover, button#alterasenha:hover, button#salvarnovasenha:hover, button#salvarperfil:hover, button#salvarpressao:hover, button#salvaralimentacao:hover, button#salvaratvfis:hover, button#universal:hover{
+	color: #ffffff;
+    border-color:  #8917ad;
+	background-color: #761f97;
+  } 
+
+a#universal:hover{
+	color: #ffffff;
+    border-color:  #8917ad;
+	background-color: #761f97;
+  } 
+
+button#botaomodal:hover{
+	color: #ffffff;
+    border-color:  #1bba4f;
+	background-color: #1bba4f;
+  } 
+
+button#cadast:hover{
+	color: #ffffff;
+    border-color:  #8917ad;
+	background-color: #761f97;
+  } 
+
+  /* Adaptação para o Internet Explorer - Edge
+  -------------------------------------------------- */
+  
+  @supports (-ms-ime-align: auto) {
+    .form-label-group>label {
+      display: none;
+    }
+    .form-label-group input::-ms-input-placeholder {
+      color: #777;
+    }
+  }
+
+/*---------------------------- PESO -------------------------------*/
+
+table#prin-peso{
+	width: 40%;
+	margin: 0px auto 0px auto;
+	text-align: center;
+}
+
+table#prin-peso td#img{
+	padding: 3px 10px 3px 10px;
+	width: 20px;
+}
+
+table#prin-peso th{
+	padding: 0px 10px 3px 10px;
+	text-align: center;
+}
+
+table#prin-peso button#botaomodaleditpeso{
+	margin: 0px -7px 0px -7px;
+}
+
+button#botaomodal{
+	display: block;
+	margin: 10px auto 10px auto;
+}
+
+/*---------------------------- Alimentação -------------------------------*/
+
+table#prin-alimentacao{
+	width: auto;
+	margin: 0px auto 0px auto;
+	text-align: center;
+}
+
+table#prin-alimentacao th{
+	padding: 0px 10px 3px 10px;
+	text-align: center;
+}
+
+table#prin-alimentacao button#botaomodaleditalim{
+	margin: 0px -7px 0px -7px;
+}
+
+/*---------------------------- Pressão -------------------------------*/
+
+table#prin-pressao{
+	width: auto;
+	margin: 0px auto 0px auto;
+	text-align: center;
+}
+
+table#prin-pressao th{
+	padding: 0px 10px 3px 10px;
+	text-align: center;
+}
+
+table#prin-pressao button#pressao{
+	margin: 0px -7px 0px -7px;
+}
+
+/*---------------------------- Ativ Física -------------------------------*/
+
+table#prin-ativfisica{
+	width: auto;
+	margin: 0px auto 0px auto;
+	text-align: center;
+}
+
+table#prin-ativfisica th{
+	padding: 0px 10px 3px 10px;
+	text-align: center;
+}
+
+table#prin-ativfisica button#ativfisica{
+	margin: 0px -7px 0px -7px;
+}
+
+/*---------------------------- Perfil -------------------------------*/
+
+section#section-perfil{
+	box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.5);
+	background-color: white;
+	box-sizing: border-box;
+	background-color: #eeeeee;
+}
+
+img#fotoperfil{
+	width: 100px;
+}
+
+section#section-perfil h3{
+	font-size: 13pt;
+}
+
+section#section-perfil section#perfil-dados{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	background-color: #f5f5f5;
+}
+
+section#section-perfil button#alterasenha{
+	position: relative;
+	left: 20px;
+	top: 18px;
+}
+
+section#section-perfil button#altinf{
+	display: block;
+	top: 25px;
+}
+
+/*---------------------------- Editar -------------------------------*/
+
+.editor{
+	margin: auto;
+	box-shadow: 6px 6px 1px rgba(0, 0, 0, 0.5);
+	padding: 20px 50px 30px 50px;
+	max-width: 700px;
+	background-color: white;
+}
+
+
+
